@@ -17,7 +17,7 @@ const Input = forwardRef(
     return (
       <div className="relative mt-8 ">
         <input
-          className="peer w-full h-10 border-2 rounded bg-transparent  placeholder-shown:border-slate-500 border-green-600 focus:outline-none placeholder-transparent p-2"
+          className="peer w-full h-10 border-2 rounded bg-transparent  placeholder-shown:border-slate-500 border-green-600 focus:outline-none placeholder-transparent p-2 focus:bg-transparent"
           {...props}
           id={id}
           ref={ref}

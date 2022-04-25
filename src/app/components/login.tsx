@@ -94,18 +94,17 @@ function Login() {
           placeholder="password"
           type="password"
         ></Input>
-        <p className="text-sm px-2 text-red-600">error invalid</p>
+
         <div className="w-full flex">
           <Button
+            text="Login"
             type="submit"
-            onClick={() => {
+            clickHandler={() => {
               authService.signOut();
 
               dispatch(resetUser());
             }}
-          >
-            Login
-          </Button>
+          ></Button>
         </div>
       </form>
       <p>{user?.uid}</p>
