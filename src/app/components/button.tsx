@@ -2,15 +2,16 @@ import React, { ForwardedRef, forwardRef } from "react";
 
 const Button = forwardRef(
   (
-    props: { type: string; children: string; onClick?: void },
+    props: { type: string; children: string; onClick?: any },
     ref: ForwardedRef<HTMLInputElement>
   ) => {
     return (
-      <div>
-        <button className="bg-lime-500 px-4 py-2 rounded" {...props.type}>
-          {props.children}
-        </button>
-      </div>
+      <button
+        className="mx-auto bg-lime-500 px-8 py-2 my-6 rounded "
+        {...props.type}
+      >
+        {props.children}
+      </button>
     );
   }
 );

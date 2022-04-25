@@ -95,24 +95,20 @@ function Login() {
           type="password"
         ></Input>
         <p className="text-sm px-2 text-red-600">error invalid</p>
-        <button
-          type="submit"
-          onClick={() => {
-            authService.signOut();
-            dispatch(resetUser());
-          }}
-        >
-          Login
-        </button>
+        <div className="w-full flex">
+          <Button
+            type="submit"
+            onClick={() => {
+              authService.signOut();
+
+              dispatch(resetUser());
+            }}
+          >
+            Login
+          </Button>
+        </div>
       </form>
       <p>{user?.uid}</p>
-      <Button type="submit">
-        {/* // onClick={() => {
-        authService.signOut();
-        dispatch(resetUser());
-      }} */}
-        Logout
-      </Button>
     </div>
   );
 }
