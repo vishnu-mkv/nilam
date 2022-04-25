@@ -95,24 +95,20 @@ function Login() {
           placeholder="password"
           type="password"
         ></Input>
-        <button
-          type="submit"
-          onClick={() => {
-            authService.signOut();
-            dispatch(resetUser());
-          }}
-        >
-          Login
-        </button>
+
+        <div className="w-full flex">
+          <Button
+            text="Login"
+            type="submit"
+            clickHandler={() => {
+              authService.signOut();
+
+              dispatch(resetUser());
+            }}
+          ></Button>
+        </div>
       </form>
       <p>{user?.uid}</p>
-      <Button type="submit">
-        {/* // onClick={() => {
-        authService.signOut();
-        dispatch(resetUser());
-      }} */}
-        Logout
-      </Button>
     </div>
   );
 }
