@@ -4,6 +4,7 @@ import { resetUser, setUser } from "../../features/slices/userSlice";
 import { authService } from "../../features/services/auth";
 import Input from "./input";
 import Button from "./button";
+import logo from '../assets/Nilam.png';
 
 function Login() {
   const emailRef = React.createRef<HTMLInputElement>(),
@@ -51,9 +52,9 @@ function Login() {
 
   return (
     <div className="max-w-lg mx-auto mt-40 border-slash-200 border-2 rounded p-16 shadow-gray-600/50">
-      <h1 className="text-green-600 font-extrabold text-5xl text-center pb-4">
-        Nilam.
-      </h1>
+
+      <img src={logo} alt="nilam" className="h-20  mx-auto mb-6" />
+      
       <h2 className="text-4xl pb-4 font-semibold">Login</h2>
       <p className="text-sm mb-8 text-gray-600">
         SignIn to your account to access dashboard
@@ -94,7 +95,6 @@ function Login() {
           placeholder="password"
           type="password"
         ></Input>
-        <p className="text-sm px-2 text-red-600">error invalid</p>
         <button
           type="submit"
           onClick={() => {

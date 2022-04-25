@@ -23,7 +23,7 @@ const Input = forwardRef(
           ref={ref}
         />
         <label
-          className="bg-white text-green-600 px-2 absolute left-1 -top-3  text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:bg-transparent peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 transition-all delay-75 ease-in-out"
+          className="bg-white text-primary absolute left-2 -top-3  text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:bg-transparent peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 transition-all delay-75 ease-in-out"
           htmlFor={id}
         >
           {label}
