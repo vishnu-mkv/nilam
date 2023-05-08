@@ -1,3 +1,3 @@
 # Nilam
 
-Project migrated to [Nilam Github](github.com/nilam-project/nilam)
+Project migrated to [Nilam Github](https://github.com/nilam-project/nilam)
